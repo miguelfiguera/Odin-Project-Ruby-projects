@@ -12,12 +12,7 @@ def fib_iterative(num, array = [0, 1])
 end
 
 def fib_rec3(num, array = [0, 1])
-  if num == array.length
-    array
-  else
-    array.push(array[-1] + array[-2])
-    fib_rec3(num, array)
-  end
+num == array.length ? array : array.push(array[-1] + array[-2]) && fib_rec3(num,array)
 end
 
 # all of this work
